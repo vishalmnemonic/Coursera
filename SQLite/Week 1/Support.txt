@@ -1,0 +1,17 @@
+SQL Overview
+https://www.thebalance.com/what-is-sql-and-uses-2071909
+https://www.ntchosting.com/encyclopedia/databases/structured-query-language/
+https://www.tutorialspoint.com/sqlite/index.htm
+
+ER Diagrams:
+http://www.information-management-architect.com/entity-relationship-diagram.html
+https://www.youtube.com/watch?v=c0_9Y8QAstg
+http://www.vertabelo.com/blog/technical-articles/data-warehouse-modeling-star-schema-vs-snowflake-schema
+https://www.youtube.com/watch?v=KUwOcip7Zzc
+http://business-analysis-excellence.com/what-is-data-modeling/
+https://en.wikipedia.org/wiki/Data_modeling
+
+SQL vs NoSQL
+http://dataconomy.com/2014/07/sql-vs-nosql-need-know/
+http://www.techrepublic.com/article/nosql-keeps-rising-but-relational-databases-still-dominate-big-data/
+https://www.siliconrepublic.com/careers/data-science-skills-sql
