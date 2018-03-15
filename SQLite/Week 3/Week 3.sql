@@ -32,3 +32,39 @@ ON Suppliers.supplierid = Products.supplierid;
 SELECT o.OrderID, c.CompanyName, e.LastName
 FROM ((Orders o INNER JOIN Customers c ON o.CustomerID = c.CustomerID) 
 		INNER JOIN Employees e ON o.EmployeeID = e.EmployeeID);
+
+		
+SELECT vendor_name, product_name, product_price
+FROM Vendors AS v, Products AS p
+WHERE v.vendor_id = p.vendor_id;
+
+SELECT A.CustomerName AS CustomerName1, B.CustormerName AS CustomerName2, A.City
+FROM Customer A, Customer B
+WHERE A.CustomerID = B.CustomerID
+AND A.City = B.City
+ORDER BY A.City;
+
+SELECT C.CustomerName, O.OrderID
+FROM CUstomer C
+LEFT JOIN Order O ON C.CustomerID = O.CustomerID
+ORDER BY C.CustomerName;
+
+SELECT O.OrderID, E.Lastname, E.FirstName
+FROM Orders O RIGHT JOIN Employees E ON
+O.EmployeeID = E.EmployeeID
+ORDER BY O.OrderID;
+
+SELECT C.CustomerName, O.OrderID
+FROM Customer C
+FULL OUTER JOIN Orders O ON
+C.CustomerID = O.CustomerID
+ORDER BY C.CustomerName;
+
+SELECT City, COuntry
+FROM Customers
+WHERE Country = "Germany"
+UNION
+SELECT City, COuntry
+FROM Suppliers
+WHERE Country = "Germany"
+
