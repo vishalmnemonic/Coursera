@@ -48,3 +48,10 @@ WHEN bytes >=300000 THEN 'Large'
 ELSE 'Other'
 END bytescategory
 FROM tracks;
+
+CREATE [TEMP] VIEW [IF NOT EXIST]		/* Creating a View */
+view_name (Column_name_list)
+AS
+select_statement;
+
+SELECT * FROM my_view DROP VIEW my_view;	/* Looking a view table */ 
