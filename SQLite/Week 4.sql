@@ -27,3 +27,24 @@ SELECT Birthdate, STRFTIME('%Y', Birthdate) As Year,
 		DATE(('now') - Birthdate) As Age
 FROM Employees;
 
+CASE
+WHEN C1 THEN E1
+WHEN C2 THEN E2
+...
+ELSE [result else]
+END
+END
+
+SELECT employeeid, firstname, lastname, city,
+CASE City WHEN 'Calgary' THEN 'Calgary'
+ELSE 'Other' END calgary
+FROM EMployees
+ORDER BY LastName, Firstname;
+
+SELECT trackid, name, bytes,
+CASE
+WHEN bytes < 300000 THEN 'Small'
+WHEN bytes >=300000 THEN 'Large'
+ELSE 'Other'
+END bytescategory
+FROM tracks;
