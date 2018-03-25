@@ -1,3 +1,5 @@
-SQL Quiz:
+# Resources on SQL
+
+## SQL Quiz:
 https://blog.sqlauthority.com/category/sql-puzzle/
 http://sqlzoo.net/
